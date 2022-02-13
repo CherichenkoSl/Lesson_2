@@ -10,6 +10,13 @@ namespace Task1
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Введите минимальную температуру воздуха за сутки:");
+            string MinTemp = Console.ReadLine();
+            System.Console.WriteLine("Введите максимальную температуру воздуха за сутки:");
+            string MaxTemp = Console.ReadLine();
+            double MinValue = Convert.ToDouble(MinTemp);
+            double MaxValue = Convert.ToDouble(MaxTemp);
+            Console.WriteLine($"Среднесуточная температура равна: {(MaxValue+MinValue)/2}{Convert.ToChar(176)}C");
         }
     }
 }
